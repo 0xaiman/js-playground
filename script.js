@@ -15,10 +15,8 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorElement.innerText = msgs.join(",");
         
-        // Use Bootstrap's Toast method to create a new toast object
         var toast = new bootstrap.Toast(toastElement);
         
-        // Show the toast
         toast.show();
     }
 });
